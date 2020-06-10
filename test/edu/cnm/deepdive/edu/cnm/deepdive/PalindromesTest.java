@@ -8,8 +8,15 @@ class PalindromesTest {
 
   @Test
   void testRecursive() {
-    assertTrue(Palindromes.testRecursive("radar"));
-    assertFalse(Palindromes.testRecursive("sonar"));
-  }
+    final String[] knownPalindromes = {
+        "abba",
+        "x",
+        ""
+    };
 
+   final String[] knownNonPalindromes = {
+        "sonar",
+        "abb"
+    };
+  }
 }
